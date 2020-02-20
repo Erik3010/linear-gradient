@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.title h1 {
+    color: #303030;
+    letter-spacing: 3px;
+}
+
+.title span {
+    display: inline-block;
+    margin-top: 2px;
+    font-weight: 500;
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to right, red, blue);
+    border: 10px solid white;
+    border-radius: 7px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+}
+
+.wrapper-color1,
+.wrapper-color2 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative;
+}
+
+.wrapper-color1 span.hash,
+.wrapper-color2 span.hash {
+    position: absolute;
+    font-weight: 800;
+    top: 43px;
+    left: 15px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.color1,
+.color2 {
+    border: 1px solid #c1c1c1;
+    background-color: #edebeb;
+    border-radius: 3px;
+    padding: 8px 10px;
+    padding-left: 35px;
+    width: 250px;
+    height: 45px;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.color1-err,
+.color2-err {
+    border: 1px solid #c1c1c1;
+    background-color: #edebeb;
+    border-radius: 3px;
+    padding: 8px 10px;
+    padding-left: 35px;
+    width: 250px;
+    height: 45px;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    background: #ea3d3d7d;
+    border: 1px solid #e92222;
+}
+
+.color1:focus,
+.color2:focus {
+    background: #329ef354;
+    border: 1px solid #0e64a8;
+}
+
+/* btn */
+.btn-wrapper {
+    margin-top: 5px;
+}
+
+.btn-wrapper .random-color {
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    background-color: red;
+    outline: none;
+}
+
+.btn-wrapper .random-color:active,
+.btn-wrapper .random-color:focus {
+    outline: 2px solid rgba(0,0,170, 0.5)
+}
+
+/* error  */
+.error-wrapper-1,
+.error-wrapper-2 {
+    display: none;
+}
+
+.error-warning {
+    color: #fc1818;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
